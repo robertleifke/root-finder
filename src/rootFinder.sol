@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 pragma solidity ^0.8.13;
 
-import { Gaussian } from "solstat/Gaussian.sol";
-import { FixedPointMathLib } from "solmate/utils/FixedPointMathLib.sol";
-import { ERC20 } from "solmate/tokens/ERC20.sol";
+import { Gaussian } from "lib/solstat/src/Gaussian.sol";
+import { FixedPointMathLib } from "lib/solmate/src/utils/FixedPointMathLib.sol";
+import { ERC20 } from "lib/solmate/src/tokens/ERC20.sol";
 
 using FixedPointMathLib for uint256;
 using FixedPointMathLib for int256;
