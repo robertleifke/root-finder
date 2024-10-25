@@ -1,6 +1,6 @@
-## Root finding
+## Root Finder
 
-A simple implementation of a root finding algorithm using the Newton-Raphson method.
+A simple implementation of a root finding algorithm RMM-01 using the Newton-Raphson method. This was done to test out the [Solstat](https://github.com/primitivefinance/solstat) library.
 
 Modern CFMMs like RMM-01 implement more complicated trading functions that have variables that dynamically change such as volatility and time to expiry.
 
@@ -41,19 +41,11 @@ $ anvil
 ### Deploy
 
 ```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
+$ forge script script/deployRootFinder.s.sol:DeployRootFinder --rpc-url <YOUR_RPC_URL> --broadcast --private-key $PRIVATE_KEY
 ```
 
 ### Cast
 
 ```shell
 $ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
 ```
