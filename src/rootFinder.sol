@@ -4,7 +4,6 @@ pragma solidity ^0.8.13;
 import { Gaussian } from "solstat/Gaussian.sol";
 import { FixedPointMathLib } from "solmate/utils/FixedPointMathLib.sol";
 import { ERC20 } from "solmate/tokens/ERC20.sol";
-import { ToUintOverflow, ToIntOverflow } from "./RmmErrors.sol";
 
 using FixedPointMathLib for uint256;
 using FixedPointMathLib for int256;
