@@ -1,19 +1,12 @@
-## Foundry
+## Root finding
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+A simple implementation of a root finding algorithm using the Newton-Raphson method.
 
-Foundry consists of:
+Modern CFMMs like RMM-01 implement more complicated trading functions that have variables that dynamically change such as volatility and time to expiry.
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+Since RMM-01 is a non-linear function that must equal 0. We can quickly solve for liquidity `L`, the denominator that normalizes the reserves to ensure F(L) = 0. 
 
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
+A more through explanation of how Newton's method works can be found in my [tweet](https://x.com/robertleifke/status/1849938696134590804).
 
 ### Build
 
